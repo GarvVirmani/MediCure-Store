@@ -1,0 +1,65 @@
+:root {
+    --main-color: #000000; /* Changed main color to black */
+}
+
+main {
+    margin-top: 5.5rem;
+}
+
+.products .card img {
+    height: 210px;
+    padding: 10px;
+}
+
+.show-btn {
+    background-color: var(--main-color); /* Changed button background to black */
+    color: white; /* Keep text color white for contrast */
+}
+
+.show-btn:hover {
+    color: white; /* Keep hover text color white */
+}
+
+.navbar-brand {
+    font-family: "Orbitron", sans-serif;
+    letter-spacing: 0.1em;
+    color: white; /* Set navbar brand color to white for contrast */
+}
+
+#heading {
+    width: 100%;
+    background-color: #e9ecef; /* Keep heading background color as is or change to black if needed */
+    padding: 16px;
+    margin: 10px auto;
+    border-radius: 10px;
+    text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.6); /* Change shadow color to white for contrast */
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+footer {
+    background-color: var(--main-color); /* Footer background is now black */
+    color: white; /* Ensure footer text is white for contrast */
+}
+
+@media screen and (max-width: 560px) {
+    .reviews-section {
+        width: 90vw;
+    }
+    #heading {
+        width: 75vw;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    #heading {
+        width: 90vw;
+    }
+}
+
+.fas.fa-heart {
+    color: red; /* Keep heart icon color as red */
+}

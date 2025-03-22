@@ -1,0 +1,41 @@
+body {
+  height: 100vh;
+  background: linear-gradient(to bottom, #004d40, #009688); /* Dark Green to Teal */
+  background-size: cover;
+  background-position: center;
+  text-shadow: 0 0.05rem 0.1rem rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 5rem rgba(0, 0, 0, 0.5);
+}
+
+.cover-container {
+  max-width: 60vw;
+}
+
+.nav-link {
+  padding: 0.25rem 0;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.8);
+  margin-left: 1rem;
+  border-bottom: 0.25rem solid transparent;
+}
+
+.nav-link:hover {
+  color: #4CAF50; 
+  border-bottom-color: #4CAF50;
+}
+
+.nav-link.active {
+  color: #ffffff;
+  border-bottom-color: #4CAF50;
+}
+
+.btn-secondary,
+.btn-secondary:hover {
+  background-color: #4CAF50;
+  color: white;
+  text-shadow: none;
+}
+
+footer p {
+  color: white;
+}

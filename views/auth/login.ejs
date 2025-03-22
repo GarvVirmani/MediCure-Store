@@ -1,0 +1,22 @@
+<% layout('layouts/boilerplate') -%>
+
+<div class="row">
+    <div class="col-md-5 mx-auto">
+        <%- include('../partials/flash')  %> 
+        <div class="card p-4 shadow-sm m-2" style="background-color: #2c3e50; color: #ecf0f1;"> <!-- Darker background and lighter text -->
+            <h1 class="display-6">Login</h1>
+            <form action="/login" method="post">
+                <div class="mb-4">
+                    <label class="form-label" for="username">Username</label>
+                    <input class="form-control" type="text" name="username" id="username" placeholder="Username" style="background-color: #34495e; color: #ecf0f1; border: 1px solid #ecf0f1; height: 50px;"> <!-- Darker gray input field -->
+                </div>
+                <div class="mb-4">
+                    <label class="form-label" for="password">Password</label>
+                    <input class="form-control" type="password" name="password" id="password" placeholder="Password" style="background-color: #34495e; color: #ecf0f1; border: 1px solid #ecf0f1; height: 50px;"> <!-- Darker gray input field -->
+                </div>
+                <button type="submit" class="btn" style="background-color: #27ae60; color: #ffffff; height: 50px;">Login</button> <!-- Green Button -->
+                <p class="fw-light mt-3" style="color: #ecf0f1;">Don't have an account yet? <a href="/register" style="color: #ecf0f1;">SignUp</a></p> <!-- Lighter text for the link -->
+            </form>
+        </div>
+    </div>
+</div>

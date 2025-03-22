@@ -1,0 +1,43 @@
+<% layout('layouts/boilerplate') -%>
+
+<div class="row">
+    <div class="col-md-6 mx-auto">
+        <div class="card p-4" style="background-color: #004d40; color: #ffffff;">
+            <h1 class="display-6">Add Product</h1>
+            <form action="/products" method="POST" class="validated-form" novalidate>
+                <div class="mb-3">
+                    <label class="form-label" for="name">Name:</label>
+                    <input class="form-control" type="text" name="name" id="name" placeholder="Product Name" required style="background-color: #2c6e49; color: #ffffff; border: 1px solid #ffffff;">
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="img" class="form-label">Image URL</label>
+                    <input class="form-control" type="text" name="img" id="img" placeholder="Product Image URL" required style="background-color: #2c6e49; color: #ffffff; border: 1px solid #ffffff;">
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="price" class="form-label">Price</label>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">₹</span>
+                        <input type="number" name="price" class="form-control" placeholder="Price" aria-label="Username" aria-describedby="basic-addon1" required style="background-color: #2c6e49; color: #ffffff; border: 1px solid #ffffff;">
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>  
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="desc">Description</label>
+                    <textarea class="form-control" name="desc" id="desc" rows="5" required style="background-color: #2c6e49; color: #ffffff; border: 1px solid #ffffff;"></textarea>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-light btn-sm" style="height: 50px;">Add</button>
+            </form>
+        </div>
+    </div>
+</div>
