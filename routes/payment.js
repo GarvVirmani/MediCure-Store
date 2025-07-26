@@ -3,7 +3,7 @@ const router = express.Router();
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 router.use(express.static('public'));
 router.use(express.urlencoded({extended:true}));
-const YOUR_DOMAIN='http://localhost:5000';
+const YOUR_DOMAIN='https://medicure-store.onrender.com';
 router.post('/create-checkout-session',async (req,res)=>{
     const product=req.body;
     console.log(product);
